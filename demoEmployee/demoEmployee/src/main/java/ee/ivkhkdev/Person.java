@@ -94,7 +94,7 @@ public class Person {
     public int hashCode() {
         return Objects.hash(name, surname, birthYear, birthMonth, birthDay, phone, address);
     }
-    public int getAge(){
+    public int age(){
         LocalDate birthdate = LocalDate.of(birthYear, birthMonth, birthDay);
         LocalDate now = LocalDate.now();
 

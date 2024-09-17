@@ -12,10 +12,18 @@ public class App {
         employee.setPosition("Director");
         employee.setSalary("3000");
 
+        Address address = new Address("J. Gagarini", "Sillamae", "5", "30");
+        Person person = new Person("Oleg", "Tamarov", 2001, 1, 1, 87654321);
+
+        Employee employee = new Employee();
+        employee.setPerson(person);
+        employee.setPosition("Blacksmith");
+        employee.setSalary("2500");
+
         System.out.printf("Employee:%n %s %s%n %d years old%n %s%n %s%n %s%n",
                 employee.getPerson().getName(),
                 employee.getPerson().getSurname(),
-                employee.getPerson().getAge(),
+                employee.getPerson().age(),
                 employee.getPerson().getPhone(),
                 employee.getPerson().getAddress().getCity(),
                 employee.getPosition());
