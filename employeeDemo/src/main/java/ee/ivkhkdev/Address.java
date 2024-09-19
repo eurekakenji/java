@@ -61,5 +61,6 @@ public class Address {
     @Override
     public int hashCode() {
         return Objects.hash(street, city, house, room);
+        // comment for publishing to github repository
     }
 }

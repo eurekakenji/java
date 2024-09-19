@@ -99,4 +99,12 @@ public class Person {
         LocalDate currentDate = LocalDate.now();
         return  Period.between(birthDate, currentDate).getYears();
     }
+
+    public int age(){
+        // Дата рождения
+        LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
+        // Текущая дата
+        LocalDate currentDate = LocalDate.now();
+        return  Period.between(birthDate, currentDate).getYears();
+    }
 }
